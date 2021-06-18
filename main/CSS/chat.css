@@ -1,0 +1,142 @@
+ul {
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vw;
+	list-style: none;
+	/* margin: 0; */
+	padding-bottom: 1vw;
+	padding-inline-end: 10px;
+	padding-inline-start: 10px;
+}
+
+li {
+	display: inline-block;
+	width: 100%;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a span {
+	background-color: transparent;
+	text-align: left;
+}
+
+/* -----MESSAGE----- */
+
+li.cl + li.me,
+li.me + li.cl,
+li.date + li,
+li + li.date {
+	margin-top: 3vw;
+}
+
+li + li {
+	margin-top: 1.5vw;
+}
+
+.msgbox {
+	background-color: var(--BgColor, #454545);
+	border-radius: 1vw;
+	max-width: 40vw;
+	min-width: 0;
+	padding: 0.1vw;
+	position: relative;
+	word-break: break-word;
+}
+
+li.cl + li.me .msgbox {
+	border-top-right-radius: unset;
+}
+
+li.me + li.cl .msgbox {
+	border-top-left-radius: unset;
+}
+
+/* li .msgbox + li .msgbox {
+	margin-top: 1vw;
+} */
+
+li.cl + li.me .msgbox::after {
+	clip-path: polygon(100% 0, -100% -100%, 0 100%);
+	right: -10px;
+}
+
+li.me + li.cl .msgbox::before {
+	clip-path: polygon(100% 0, 100% 100%, -100% -100%);
+	left: -10px;
+}
+
+li.cl + li.me .msgbox::after,
+li.me + li.cl .msgbox::before {
+	background-color: inherit;
+	content: "";
+	display: block;
+	height: 10px;
+	position: absolute;
+	top: 0;
+	width: 10px;
+}
+
+.msgbox.me {
+	/* background-color: #e5ffcc; */
+	float: right;
+}
+
+.icon {
+	height: 20px;
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+}
+
+.msgbox1 {
+	background-color: unset;
+	padding: 4px;
+	/* padding-left: 8px; */
+	/*! position: relative; */
+}
+
+.msgbox1 .user {
+	color: #d0d0d0;
+	font-size: 2.5vw;
+}
+
+.msgbox2 {
+	display: flex;
+	/*! justify-content: space-between; */
+}
+
+.msgbox .msg {
+	background-color: unset;
+	padding-right: 8px;
+}
+
+.timebox {
+	align-items: flex-end;
+	background-color: unset;
+	/* color: #9b9fa2; */
+	color: #a0a0a0;
+	display: flex;
+	/* font-size: 12px; */
+	font-size: 1.5vw;
+	white-space: nowrap;
+}
+
+
+.datebox {
+	border-radius: 1vw;
+	font-size: 2vw;
+	text-align: center;
+	width: 100%;
+}
+
+.datebox .msg {
+	background-color: var(--BgColor, #454545);
+	border-radius: 50px;
+	padding: 5px 30px;
+}

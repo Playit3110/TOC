@@ -1,0 +1,13 @@
+/* form {
+	border-bottom: 1px solid white;
+} */
+
+form label, form button {
+	display: block;
+}
+
+form textarea {
+	font-family: inherit;
+	font-size: inherit;
+    height: 3vw;
+}

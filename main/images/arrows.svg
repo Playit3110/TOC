@@ -1,0 +1,18 @@
+<svg height="100px" version="1.1" viewBox="0 0 100 100" width="100px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<!-- <clipPath id="left">
+		<path d="M100,0 l-90,0 l-6.6,17.5 l100,85 Z" />
+		<circle cx="10" cy="10" r="10" />
+	</clipPath>
+	<clipPath id="right">
+		<path d="M0,0 l90,0 l6.6,17.5 l-100,85 Z" />
+		<circle cx="90" cy="10" r="10" />
+	</clipPath> -->
+	<clipPath id="left">
+		<path d="M10,0 l-9,0 l-0.66,1.75 l10,8.5 Z" />
+		<circle cx="1" cy="1" r="1" />
+	</clipPath>
+	<clipPath id="right">
+		<path d="M0,0 l9,0 l0.66,1.75 l-10,8.5 Z" />
+		<circle cx="9" cy="1" r="1" />
+	</clipPath>
+</svg>

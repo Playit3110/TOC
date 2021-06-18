@@ -1,0 +1,12 @@
+<svg class="msg-state" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 70">
+	<g stroke="gray" stroke-width="10" fill="transparent">
+		<g class="clock">
+			<rect x="20" y="5" rx="15" height="60" width="60" />
+			<polyline points="50 20 50 40 65 40" />
+		</g>
+		<g class="cm" stroke-linecap="round">
+			<polyline class="cm1" points="10 45 25 60 65 10" />
+			<polyline class="cm2" points="50 55 55 60 95 10" />
+		</g>
+	</g>
+</svg>

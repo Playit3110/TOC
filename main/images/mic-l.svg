@@ -1,0 +1,7 @@
+<svg version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g stroke="black" stroke-width="4" stroke-linecap="round">
+		<line x1="50" y1="20" x2="50" y2="42" stroke-width="30" />
+		<path d="M30 40 c0 30 40 30 40 0" fill="transparent" />
+		<line x1="50" y1="90" x2="50" y2="64" />
+	</g>
+</svg>

@@ -1,0 +1,15 @@
+.dark {
+	color: white;
+}
+
+.dark .c-msg {
+	background-color: #202020;
+	/* img */
+	background-color: #222e35;
+}
+
+.dark .my-msg {
+	background-color: #003025;
+	/* img */
+	background-color: #054740;
+}
