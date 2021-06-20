@@ -7,8 +7,21 @@ if(exists($_SESSION, "user"))
 
 if(exists($_POST, "user")) {
 	$name = htmlspecialchars($_POST["user"]);
-	$_SESSION["user"] = $user;
-	header("Location: ../");
+	if(checkUser($name)) {
+		$user = [
+			"name" => $name,
+			"color" => false
+		];
+		if(exists($_POST, "color")) {
+			$color = htmlspecialchars($_POST["color"]);
+			if(is_numeric(substr($color, -6)) && strlen($color) == 7) {
+				$user["color"] = $color;
+			}
+		}
+		addUser($user);
+		$_SESSION["user"] = $user;
+		header("Location: ../");
+	}
 }
 ?>
 <!DOCTYPE html>
@@ -26,6 +39,8 @@ if(exists($_POST, "user")) {
 		<h1>Login</h1>
 		<label for="user">Username: </label>
 		<input type="text" name="user" id="user">
+		<label for="color">Color: </label>
+		<input type="color" name="color" id="color">
 		<button type="submit">send</button>
 	</form>
 </body>

@@ -25,6 +25,20 @@ function checkDay($MSGS) {
 	if(count($MSGS) < 1) return true;
 	$msg = array_pop($MSGS);
 	if(!is_array($msg)) $msg = json_decode($msg, true);
+	if(strtotime($msg["date"]) < strtotime("today")) {
+		$log = strtotime($msg["date"])." < ".strtotime("today");
+		$log .= " = ".(strtotime($msg["date"]) < strtotime("today") ? "true" : "false");
+		$log .= "\n";
+		error_log(
+			$log,
+			3,
+			__DIR__."/test.log"
+		);
+	}
 	return strtotime($msg["date"]) < strtotime("today");
 }
+
+// function target($name) {
+
+// }
 ?>

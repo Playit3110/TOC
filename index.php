@@ -17,6 +17,6 @@ if(!exists($_SESSION, "user"))
 </head>
 <body>
 	<iframe class="send" src="./main/pages/send.php" frameborder="0"></iframe>
-	<iframe class="chat" src="./main/pages/chat.php?user=<?php echo $_SESSION["user"]; ?>" frameborder="0"></iframe>
+	<iframe class="chat" src="./main/pages/chat.php?user=<?php echo $_SESSION["user"]["name"]; ?>" frameborder="0"></iframe>
 </body>
 </html>

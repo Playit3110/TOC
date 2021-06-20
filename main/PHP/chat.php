@@ -1,4 +1,5 @@
 <?php
+
 function countMsgs() {
 	global $FILE;
 	$lc = 0;
